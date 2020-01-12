@@ -1,0 +1,64 @@
+
+//variables
+$light-color: #FDF2EF;
+$dark-color: #160B08;
+$orange-color: #C56243;
+
+body {
+  background-color: $light-color;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 32px 0;
+  font-size: 32px;
+  color: $dark-color;
+  text-align: center;
+}
+
+.shelf-with-gifts {
+  height: 100px;
+  border: 1px solid $orange-color;
+  margin: 0 0 24px;
+}
+
+.main-content {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  width: 48%;
+}
+
+.introduce-text {
+  width: 85%;
+  font-size: 24px;
+  color: $dark-color;
+  margin: 0 0 12px;
+}
+
+.action-text {
+  @extend .introduce-text;
+  font-size: 28px;
+  margin: 0;
+}
+
+.box {
+  width: calc(48% + 2px);
+  border-left: 2px dashed $orange-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid $orange-color;
+}
